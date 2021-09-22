@@ -1,0 +1,30 @@
+.MuiInputBase-root {
+    width: 100%;
+    height: 2em;
+    background: #666;
+    margin: 0 0.8em 0 0;
+    padding: 0.2em 0.6em !important;
+    color: #fff !important;
+    font-size: 1.3vw !important;
+    font-family: "NetflixSansRegular" !important;
+    box-sizing: border-box;
+    text-indent: 0.1vw;
+}
+
+.MuiInputBase-input {
+    border: 1px solid transparent;
+}
+
+.MuiInputBase-root.MuiInputBase-formControl {
+    border-radius: 0 !important;
+    padding: 0.4em 0.6em !important;
+}
+.MuiOutlinedInput-input {
+    padding: 0 !important;
+}
+
+.MuiMenu-list {
+    outline: 0;
+    color: white;
+    background: rgba(0, 0, 0, 0.9);
+}

@@ -1,16 +1,21 @@
 import { createMuiTheme } from "@material-ui/core/styles";
 
-export const lightTheme = createMuiTheme({
+export const darkTheme = createMuiTheme({
     palette: {
         primary: {
-            main: "#207BE7",
+            main: "#808080",
         },
+        highlight: "#e5e5e5",
+        background: "#141414",
+        white: "#FFFFFF",
+        black: "#000000",
+        red: "#c00",
     },
     // Don't add colors in the palette. Apart from primary, secondary etc...
     // All custom colors should be in a different object.
 
     // weights
-    headingBold: 400,
+    bold4: 400,
     bold5: 500,
     bold6: 600,
     bold9: 900,
@@ -30,4 +35,4 @@ export const lightTheme = createMuiTheme({
     grey: "#808080",
 });
 
-export const darkTheme = createMuiTheme({});
+export const lightTheme = createMuiTheme({});

@@ -8,15 +8,19 @@ import storage from "redux-persist/lib/storage";
 import thunk from "redux-thunk";
 
 import dummy from "./reducers/dummyReducer";
+import profiles from "./reducers/profiles";
 
 const persistConfig = {
     key: "root",
     storage,
     stateReconciler: autoMergeLevel2,
-    whitelist: ["dummy"],
+    whitelist: ["dummy", "profiles"],
 };
 
-const rootReducer = persistReducer(persistConfig, combineReducers({ dummy }));
+const rootReducer = persistReducer(
+    persistConfig,
+    combineReducers({ dummy, profiles })
+);
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 

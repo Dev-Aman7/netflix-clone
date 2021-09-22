@@ -3,10 +3,11 @@ import { addDecorator } from "@storybook/react";
 import { BrowserRouter } from "react-router-dom";
 import { ThemeProvider } from "@material-ui/core/styles";
 
-import { lightTheme } from "../src/style/theme";
+import { darkTheme } from "../src/style/theme";
+import "../src/index.css";
 
 addDecorator((story) => (
-    <ThemeProvider theme={lightTheme}>
+    <ThemeProvider theme={darkTheme}>
         <BrowserRouter>{story()}</BrowserRouter>
     </ThemeProvider>
 ));
